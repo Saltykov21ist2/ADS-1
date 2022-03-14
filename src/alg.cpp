@@ -13,9 +13,9 @@ uint64_t ch = 2;
   return true;
 }
 
-uint64_t nPrime(uint64_t n){
+uint64_t nPrime(uint64_t n) {
  int pr = 0, ct = 1;
-  while (num != n){
+  while (ct != n){
   while (pr != n) {
   ct++;
   if (checkPrime(ct)) {
@@ -25,7 +25,7 @@ uint64_t nPrime(uint64_t n){
   return ct;
 }
 
-uint64_t nextPrime(uint64_t value){
+uint64_t nextPrime(uint64_t value) {
 value++;
   while ((checkPrime(value)) != true){
   value++;
@@ -33,7 +33,7 @@ value++;
   return value;
 }
 
-uint64_t sumPrime(uint64_t hbound){
+uint64_t sumPrime(uint64_t hbound) {
   int j = 2;
   uint64_t summ = 0;
   for (j = 2; j < hbound; j++){
